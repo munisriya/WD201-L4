@@ -29,7 +29,7 @@ const todoList = () => {
     return list
       .map(
         (todolist) =>
-          `${todolist.completed ? "[x]" : "[ ]"} ${todolist.title} ${
+          `${todolist.completed ? "[x]" : "[ ]"} ${todolist.title}.trim() ${
             todolist.dueDate === new Date().toLocaleDateString("en-CA")
               ? " "
               : todolist.dueDate
